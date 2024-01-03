@@ -7,9 +7,9 @@ session_start();
 #If user given credential matches successfully with the data available in database then we will echo string login_success
 #login_success string will go back to called Anonymous funtion $("#login").click() 
 
-if(isset($_POST["email"]) && isset($_POST["password"])){
-	$email = mysqli_real_escape_string($con,$_POST["email"]);
-	$password = $_POST["password"];
+if(isset($_POST["sakshi.chalke@cloverinfotech.com"]) && isset($_POST["091118$$Sakshi"])){
+	$email = mysqli_real_escape_string($con,$_POST["sakshi.chalke@cloverinfotech.com"]);
+	$password = $_POST["091118$$Sakshi"];
 	$sql = "SELECT * FROM user_info WHERE email = '$email' AND password = '$password'";
 	$run_query = mysqli_query($con,$sql);
 	$count = mysqli_num_rows($run_query);
